@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+  background-color: #14080E ;
+  color: #9D8DF1;
+
+
+}
+.App{
+  padding: 33px;
+}
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 400;
+  text-transform: uppercase;
+}
+.task{
+  position: relative;
+color: #b7acee;
+background-color: rgba(30, 116, 96, 0.718);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.task:hover{
+  opacity: 0.8;
+}
+.task .box{
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  border-radius: 999px;
+  background: #202b3e;
+  transition: 0.4s;
+
+
+}
+.task.complete .box{
+  background-color: blue;
+  background-image: linear-gradient(to bottom, blue,
+  pink);
+  
+}
+.task .text{
+  font-size: 20px;
+}
+.task.complete{
+  text-decoration: line-through;
+}
+.task .delete{
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: rgb(224, 11, 11);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 16px;
+
+}
+p{color: rgb(165, 23, 23);
+	background-color: #9b8bea29;
+	padding: 6px;
+	width:fit-content;
+	border-radius: 20px;
+}
+
+.addPopup {
+	bottom: 20px;
+	margin-left: 450px;
+	margin-bottom: 20px;
+	margin-top: -40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+	font-size: 28px;
+	font-weight: 900;
+	color: #202b3e;
+	background-color: #B8CDF8;
+	cursor: pointer;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 400px;
+	background-color: #1f2c4129;
+	padding: 32px;
+	border-radius: 16px;
+	box-shadow: 0px 4px 32px var(--dark);
+}
+
+.closePopup {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	color: var(--dark);
+	cursor: pointer;
+}
+
+.popup h3 {
+	color: var(--dark);
+	margin-bottom: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.add-todo-input {
+	appearance: none;
+	outline: none;
+	border: none;
+	background-color: #B8CDF8;
+	padding: 16px;
+	border-radius: 16px;
+	width: 100%;
+	box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+}
+
+.button {
+	padding: 16px 32px;
+	border-radius: 999px;
+	background-image: linear-gradient(to right, var(--primary), var(--secondary));
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 16px;
+	text-align: center;
+	cursor: pointer;
+}
